@@ -1,0 +1,14 @@
+python my_main_source.py mae_nih_pmask0.75_img192p16_batch1_all_rotation \
+    -G $1 \
+    --method mae_train \
+    --batch_size 1 \
+    --train_list NIH_train \
+    --val_list NIH_val \
+    --data_root /data/MING/data/NIH \
+    --val_data_root /data/MING/data/NIH \
+    --data_path /data/MING/code/VAE_06/data/My_Multi_all.json \
+    --eval_epoch 20 \
+    --save_epoch 800 \
+    --max_epoch 50000 \
+    --save_more_reference \
+    --load_prefix_mae mae_nih_pmask0.75_img192p16_batch1_all_rotation \

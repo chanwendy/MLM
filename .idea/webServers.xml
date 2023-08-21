@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9846ed92-b9ee-4e84-baa5-5d461ee979aa" name="VAE (project level)" url="http:///">
+        <fileTransfer accessType="SFTP" host="10.24.11.4" port="9152" sshConfigId="ff4d78d3-c0e3-41db-8659-1ea8ba114421" sshConfig="2021_stu@10.24.11.4:9152 key" keyPair="true" />
+      </webServer>
+      <webServer id="acdaaeeb-8338-43e5-a2f5-c667dab0edd7" name="user02@10.24.2.220:22" url="http:///">
+        <fileTransfer accessType="SFTP" host="10.24.2.220" port="22" sshConfigId="2aec9cf0-7c17-4b2e-8b2e-a21ee507071e" sshConfig="user02@10.24.2.220:22 password" />
+      </webServer>
+      <webServer id="0f42dfbb-c323-4c0b-bdb5-d6508de384de" name="VAE_02">
+        <fileTransfer accessType="SFTP" host="10.24.11.6" port="22" sshConfigId="9fa45144-b0f9-44f9-926f-ada9fac55e97" sshConfig="user02@10.24.11.6:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
