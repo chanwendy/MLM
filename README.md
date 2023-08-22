@@ -51,19 +51,17 @@ All the preprocessed data should be put in a json file with the same format as w
 
 The training scripts can be found in the folder `scripts/`. 
 
-First, run script `bash scripts/source/vae_nih.bash <GPU-number>` and `bash scripts/source/seg_nih.bash` to train the VAE network and the segmentation network on the source domain.
+First, run script `bash scripts/source/mae_nih.bash <GPU-number>` and `bash scripts/source/seg_nih.bash` to train the VAE network and the segmentation network on the source domain.
 
 On the target domain, use command `bash scripts/target/<script_name> <GPU-number>` run scripts for different tasks.
 
-|        Script name         |                           Function                           |
-| :------------------------: | :----------------------------------------------------------: |
-|   domain_msd_pseudo.bash   |        Domain adaptation without reconstruction loss.        |
-|      domain_msd.bash       | Domain adaptation with our VAE pipeline. (without any techniques) |
-|    domain_msd_ft1.bash     | Domain adaptation with our VAE pipeline. (with test-time training) |
-|     domain_msd_dh.bash     | Domain adaptation with our VAE pipeline. (with dynamic hyperparameters) |
-| **domain_msd_dh_ft1.bash** | Domain adaptation with our VAE pipeline. (with both techniques) |
-
-To evaluate a trained model, remove the `--load_prefix` and `--load_prefix_vae` args in the script, but add `--load_prefix_joint <experiment_name>` and `--test_only`.
+|       Script name       |                  Function                   |
+| :---------------------: | :-----------------------------------------: |
+|   domainseg_msd.bash    | Domain adaptation with reconstruction loss. |
+| domainseg_msd_load.bash |  Domain adaptation with our MAE pipeline.   |
+|                         |                                             |
+|                         |                                             |
+|                         |                                             |
 
 
 
