@@ -60,9 +60,7 @@ On the target domain, use command `bash scripts/target/<script_name> <GPU-number
 | :---------------------: | :-----------------------------------------: |
 |   domainseg_msd.bash    | Domain adaptation with reconstruction loss. |
 | domainseg_msd_load.bash |  Domain adaptation with our MAE pipeline.   |
-|                         |                                             |
-|                         |                                             |
-|                         |                                             |
+
 
 
 
